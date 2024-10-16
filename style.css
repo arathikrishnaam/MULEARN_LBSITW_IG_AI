@@ -1,0 +1,274 @@
+/* Global Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #F4F0F9;
+  margin: 0;
+  padding: 0;
+  color: #4A4A4A;
+  line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+  background: linear-gradient(45deg, #6A0DAD, #B983FF);
+  padding: 40px 0;
+  text-align: center;
+  color: #FFFFFF;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  font-size: 3rem;
+  margin: 0;
+  letter-spacing: 1.5px;
+}
+
+nav {
+  margin-top: 15px;
+}
+
+nav a {
+  color: #EFEAFF;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #FFD700;
+}
+
+/* Main Content */
+main {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Section Headings */
+h2 {
+  color: #6A0DAD;
+  margin-bottom: 10px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* Button Styles */
+button {
+  background-color: #A259FF;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #8134AF;
+  transform: scale(1.05);
+}
+
+/* Info Box */
+.info-box {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+#info-content {
+  margin-top: 20px;
+  padding: 25px;
+  background-color: #F8F2FF;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 40px 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #DDD;
+}
+
+th {
+  background-color: #A259FF;
+  color: #FFFFFF;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+  background-color: #F4F0F9;
+}
+
+/* Article Cards */
+.project-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+article {
+  flex: 1 1 30%;
+  background-color: #FDF7FF;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+article:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Roadmap Image */
+.roadmap-image {
+  max-width: 100%;
+  height: auto;
+  margin-top: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Styles */
+#roadmap {
+  background: linear-gradient(145deg, #EFEAFF, #f8f4ff);
+  padding: 80px 20px;
+  color: #3E206D;
+  text-align: center;
+}
+
+#roadmap h2 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  color: #6A0DAD;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+#roadmap p {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  line-height: 1.8;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #4A4A4A;
+}
+
+/* Roadmap Item Cards */
+#roadmap h3 {
+  color: #8134AF;
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+  text-align: left;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  background-color: #FFFFFF;
+  margin: 10px 0;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  color: #4A4A4A;
+  font-size: 1rem;
+  text-align: left;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+ul li:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Alternating Backgrounds */
+#roadmap h3:nth-child(even),
+#roadmap ul:nth-child(even) {
+  background-color: #F0E6FF;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+/* Projects Section */
+#roadmap ul li b {
+  color: #6A0DAD;
+}
+
+#roadmap ul li:hover b {
+  color: #A259FF;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  #roadmap h2 {
+    font-size: 2rem;
+  }
+
+  #roadmap p {
+    font-size: 1rem;
+  }
+
+  #roadmap h3 {
+    font-size: 1.5rem;
+  }
+
+  ul li {
+    font-size: 0.9rem;
+  }
+}
+
+
+/* Footer Styles */
+footer {
+  background-color: #8134AF;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Interactive Elements */
+button, nav a {
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .project-list {
+    flex-direction: column;
+  }
+
+  article {
+    width: 100%;
+  }
+}
